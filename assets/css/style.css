@@ -1,0 +1,243 @@
+
+:root{
+
+    /* color */
+    --default-black:#000;
+    --black-color:#333;
+    --dark-gray:#666;
+    --gray-color:#999;
+    --light-gray:#bbbbbb;
+    --dark-red:#92242a;
+    --red-color:#e52e2e;
+    --orange-color:#ff6b00;
+    --blue-color:#4e84d3;
+    --white-color:#fff;
+}
+
+
+
+/* navbar */
+
+
+nav {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+
+    background: #fff;
+}
+
+nav .wrapper {
+    position: relative;
+    max-width: 1200px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper .logo a {
+    color: #1a1a1a;
+    font-size: 30px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.wrapper .nav-links {
+    display: inline-flex;
+}
+
+.nav-links li {
+    list-style: none;
+    padding: 0 25px;
+    position: relative;
+}
+
+
+
+.nav-links li a {
+    color: var(--default-black);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.nav-links .mobile-item {
+    display: none;
+}
+
+.nav-links .drop-menu {
+    position: absolute;
+    background: var(--white-color);
+    width: 170px;
+    top: 59px;
+    left: -30px;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+}
+
+
+.nav-links li:hover .drop-menu,
+.nav-links li:hover .mega-box {
+    transition: all 0.3s ease;
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+}
+
+.drop-menu li{
+    width: 100%;
+    display: block;
+    padding:0 0 20px; 
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.drop-menu li:last-child{
+    padding: 0 0 0;
+}
+
+.wrapper .btn{
+    color: #000;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+  }
+
+
+.wrapper .btn.close-btn {
+    position: absolute;
+    right: 30px;
+    top: 10px;
+}
+
+nav input {
+    display: none;
+}
+
+.material-symbols-outlined{
+    font-size: 36px;
+}
+
+
+/* ==================================About Dr.diary=============================== */
+
+/* main */
+
+.main .main_content{
+    background: url('/assets/img/img_main1.PNG') no-repeat;
+    background-size: cover; 
+    width: 100%;
+    height: 100vh;
+}
+
+@media screen and (max-width: 970px) {
+    .wrapper .btn {
+        display: block;
+    }
+
+    .wrapper .nav-links {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        max-width: 350px;
+        top: 0;
+        left: -100%;
+        background: #fff;
+        display: block;
+        padding: 50px 10px;
+        line-height: 50px;
+        overflow-y: auto;
+        box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.18);
+        transition: all 0.3s ease;
+    }
+
+    /* custom scroll bar */
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: #242526;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: #3A3B3C;
+    }
+
+    #menu-btn:checked~.nav-links {
+        left: 0%;
+    }
+
+    #menu-btn:checked~.btn.menu-btn {
+        display: none;
+    }
+
+    #close-btn:checked~.btn.menu-btn {
+        display: block;
+    }
+
+    .nav-links li {
+        margin: 15px 10px;
+    }
+
+    .nav-links li a {
+        padding: 0 20px;
+        display: block;
+        font-size: 20px;
+    }
+
+    .nav-links .drop-menu {
+        position: static;
+        opacity: 1;
+        top: 65px;
+        visibility: visible;
+        /* padding-left: 20px; */
+        width: 100%;
+        max-height: 0px;
+        overflow: hidden;
+        box-shadow: none;
+        transition: all 0.3s ease;
+        padding: 0;
+    }
+
+    #showDrop:checked~.drop-menu,
+    #showMega:checked~.mega-box {
+        max-height: 100%;
+    }
+
+    .nav-links .desktop-item {
+        display: none;
+    }
+
+    .nav-links .mobile-item {
+        display: block;
+        color: var(--default-black);
+        font-size: 20px;
+        font-weight: 700;
+        padding-left: 20px;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: all 0.3s ease;
+    }
+
+    /* .nav-links .mobile-item:hover {
+        background: #3A3B3C;
+    } */
+
+    .drop-menu li {
+        margin: 0;
+    }
+
+    nav .wrapper{
+        padding: 10px 20px;
+        height:60px;
+    }
+
+
+}
+
