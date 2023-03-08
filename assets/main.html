@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/style.css">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -22,44 +22,46 @@
 
     <!-- header -->
     <header>
-
-        <nav>
-            <div class="wrapper">
             
+        <div class="navigation">
+            <div class="nav-container">
                 <!-- logo  -->
                 <div class="logo">
                     <!-- <img src="" alt="logo"> -->
-                    <a href="/assets/pages/main.html">닥터다이어리</a>
+                    <a href="/assets/main.html">닥터다이어리</a>
                 </div>
-
-                <input type="radio" name="slider" id="menu-btn">
-                <input type="radio" name="slider" id="close-btn">
-                <!-- navbar -->
                 
-                <ul class="nav-links">
-                    <label for="close-btn" class="btn close-btn">
-                        <span class="material-symbols-outlined">close</span>
-                    </label>
-                    <li><a href="/assets/pages/main.html">About Dr.diary</a></li>
-                    <li>
-                        <a href="/assets/pages/service_digital.html" class="desktop-item">Service</a>
 
-                        <!-- mobile dropdown -->
-                        <input type="checkbox" id="showDrop">
-                        <label for="showDrop" class="mobile-item">Service</label>
-                        <ul class="drop-menu">
-                            <li><a href="/assets/pages/service_digital.html">Digital Platform</a></li>
-                            <li><a href="/assets/pages/service_program.html">Service Program</a></li>
-                            <li><a href="/assets/pages/service_commerce.html">Commerce</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/assets/pages/news.html">News</a></li>
-                    <li><a href="/assets/pages/contact.html">Contact</a></li>
-                </ul>
-                <label for="menu-btn" class="btn menu-btn"><span class="material-symbols-outlined">menu</span></label>
 
+    
+                <nav>
+                    <div class="nav-mobile">
+                        <a id="nav-toggle" href="#!">
+                            <span></span>
+                        </a>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="menu-item"><a href="/assets/main.html">About Dr.diary</a></li>
+                        <li class="menu-item menu-dropdown">
+                            <a href="javascript:void(0)">Service</a>
+    
+                            <ul class="nav-dropdown">
+                                <li class="submenu_item"><a href="/assets/service_digital.html">Digital Platform</a></li>
+                                <li class="submenu_item"><a href="/assets/service_program.html">Service Program</a></li>
+                                <li class="submenu_item"><a href="/assets/service_commerce.html">Commerce</a></li>
+                            </ul>
+    
+                        </li>
+                        <li class="menu-item"><a href="/assets/news.html">News</a></li>
+                        <li class="menu-item"><a href="/assets/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+    
             </div>
-        </nav>
+        </div>
+
+
+
 
 
     </header>
@@ -90,56 +92,60 @@
     <section id="slide">
         <div class="slide_wrap">
             <div class="slide_item">
-                <img src="" alt="slide">
+                <div class="img"></div>
+                <!-- <img src="" alt="slide"> -->
                 <div class="slide_content">
                     <div class="slide_title">닥터다이어리가 지향하는 가치</div>
                     <div class="slide_descript">
                         <h2>SELF-MOTIVATION</h2>
                         <p>닥터다이어리는 꾸준한 동기부여를 중요시 합니다. 
-                            마라톤과 같은 만성질환관리를 포기하지 않고 
-                            끝까지 자가관리 할 수 있도록 지속적인 관리를 돕습니다.
+                            <br>마라톤과 같은 만성질환관리를 포기하지 않고 
+                            <br>끝까지 자가관리 할 수 있도록 지속적인 관리를 돕습니다.
                         </p>
                     </div>
                 </div>
                 
             </div>
             <div class="slide_item">
-                <img src="" alt="slide">
+                <div class="img"></div>
+                <!-- <img src="" alt="slide"> -->
                 <div class="slide_content">
                     <div class="slide_title">닥터다이어리가 지향하는 가치</div>
                     <div class="slide_descript">
                         <h2>COMMUNITY</h2>
                         <p>닥터다이어리는 사회적 커뮤니케이션을 중요시 합니다. 
-                            개인과 공동체의 연결을 돕기 위한 커뮤니티를 운영하고 있습니다. 
-                            사회적 인식 개선과  만성질환자들의 삶의 질의 개선을 위한 
-                            사회환원 활동도 활발하게 하고 있습니다. 
+                            <br>개인과 공동체의 연결을 돕기 위한 커뮤니티를 운영하고 있습니다. 
+                            <br>사회적 인식 개선과  만성질환자들의 삶의 질의 개선을 위한 
+                            <br>사회환원 활동도 활발하게 하고 있습니다. 
                             </p>
                     </div>
                 </div>
                 
             </div>
             <div class="slide_item">
-                <img src="" alt="slide">
+                <div class="img"></div>
+                <!-- <img src="" alt="slide"> -->
                 <div class="slide_content">
                     <div class="slide_title">닥터다이어리가 지향하는 가치</div>
                     <div class="slide_descript">
                         <h2>DIGITAL MULTI SOLUTION</h2>
                         <p> IT 기술, 스마트 기기, 컨텐츠, 커뮤니티, 커머스 등의 멀티 솔루션을 통해
-                            질환 관리를 위한 지속적인 건강행동 유발이 일어나도록 설계하여 
-                            차별화된 헬스케어 서비스를 경험할 수 있게 개발하고 있습니다. </p>
+                            <br>질환 관리를 위한 지속적인 건강행동 유발이 일어나도록 설계하여 
+                            <br>차별화된 헬스케어 서비스를 경험할 수 있게 개발하고 있습니다. </p>
                     </div>
                 </div>
                 
             </div>
             <div class="slide_item">
-                <img src="" alt="slide">
+                <div class="img"></div>
+                <!-- <img src="" alt="slide"> -->
                 <div class="slide_content">
                     <div class="slide_title">닥터다이어리가 지향하는 가치</div>
                     <div class="slide_descript">
                         <h2>DIGITAL THERAPEUTICS</h2>
                         <p> 닥터다이어리는 한국 최초 당뇨병 카테고리 DTA 가입을 하였습니다. 
-                            환자 생애 주기 데이터를 기반으로 한 디지털 치료제 출시를 통해 
-                            전문 치료 영역으로의 확장을 준비하고 있습니다
+                            <br>환자 생애 주기 데이터를 기반으로 한 디지털 치료제 출시를 통해 
+                            <br>전문 치료 영역으로의 확장을 준비하고 있습니다
                         </p>
                     </div>
                 </div>
@@ -149,7 +155,7 @@
     </section>
 
     <section id="middle_content">
-        <div class="middle_contentt wrapp_inner">
+        <div class="middle_content wrapp_inner">
             <div class="middle_title">
                 데이터 기반 초개인화된 <span>만성질환 케어</span>
                 <Br>닥터다이어리가 이끌어나가고 있습니다.
@@ -242,7 +248,7 @@
     </section>
 
     <section id="history">
-        <div class="history">
+        <div class="history wrapp_inner">
             <h3 class="title">
                 닥터다이어리의 성장
             </h3>
@@ -262,9 +268,10 @@
                 </li>
             </ul>
 
+            <p class="history_title">HISTORY</p>
             <ul class="timeline">
-                <li class="timeline_year">2022</li>
-                <li>
+                <li class="timeline_year">
+                    <h2>2022</h2>
                     <div class="timeline_content">
                         <p class="timline_descript">Series B 투자 유치</p>
                         <p class="timline_descript">80만 다운로드 달성</p>
@@ -276,8 +283,8 @@
                         <p class="timline_descript">동국대병원 MOU </p>
                     </div>
                 </li>
-                <li class="timeline_year">2021</li>
-                <li>
+                <li class="timeline_year">
+                    <h2>2021</h2>
                     <div class="timeline_content">
                         <p class="timline_descript">글로벌 디지털 치료 협회 가입</p>
                         <p class="timline_descript">커뮤니티 서비스 리뉴얼</p>
@@ -288,8 +295,8 @@
                         <p class="timline_descript">카카오톡 플러스친구 10만 달성(헬스케어 업계 최대)</p>
                     </div>
                 </li>
-                <li class="timeline_year">2020</li>
-                <li>
+                <li class="timeline_year min-height">
+                    <h2>2020</h2>
                     <div class="timeline_content">
                         <p class="timline_descript">식품 브랜드 무화당 오픈 </p>
                         <p class="timline_descript">자사 유통채널 확대(컬리/쿠팡 등)</p>
@@ -297,30 +304,32 @@
                         <p class="timline_descript">합병증 발생율을 통한 보험 추천 BM 출기</p>
                     </div>
                 </li>
-                <li class="timeline_year">2019</li>
-                <li>
+                <li class="timeline_year height">
+                    <h2>2019</h2>
                     <div class="timeline_content">
                         <p class="timline_descript">당뇨병 학회 캠프 앱 선정 </p>
                         <p class="timline_descript">20만 다운로드 달성</p>
                         <p class="timline_descript">부산대학교 앱 효과성 논문 입증</p>
                     </div>
                 </li>
-                <li class="timeline_year">2018</li>
-                <li>
+                <li class="timeline_year height">
+                    <h2>2018</h2>
                     <div class="timeline_content">
                         <p class="timline_descript">닥터다이어리 당뇨캠프 진행</p>
                         <p class="timline_descript">닥터다이어리 오프라인 행사 12회 집행 </p>
                         <p class="timline_descript">서울시 당뇨 교육 전담 위탁기업 운영</p>
                     </div>
                 </li>
-                <li class="timeline_year">2017</li>
-                <li>
+
+                <li class="timeline_year">
+                    <h2>2017</h2>
                     <div class="timeline_content">
                         <p class="timline_descript">닥터다이어리 앱 출시</p>
                         <p class="timline_descript">커뮤니티 오픈</p>
                         <p class="timline_descript">12월 닥다몰 출시</p>
                     </div>
                 </li>
+
             </ul>
 
         </div>
@@ -328,20 +337,23 @@
 
     <section id="bottom">
         <div class="bottom">
-            <div class="bottom_title">
-                닥터다이어리와 함께
-                <br>내일 더 건강한 나를 만나보세요.
+            <div class="bottom_wrap">
+                <div class="bottom_title">
+                    닥터다이어리와 함께
+                    <br>내일 더 건강한 나를 만나보세요.
+                </div>
+                <div class="btn-container">
+                    <button type="button" class="btn submit-btn">
+                        닥터다이어리 시작하기
+                    </button>
+                </div> 
             </div>
-            <div class="btn-container">
-                <button type="button" class="btn submit-btn">
-                    닥터다이어리 시작하기
-                </button>
-            </div> 
+
         </div>
     </section>
 
     <footer>
-        <div class="footer">
+        <div class="footer wrapp_inner">
             <div class="footer_logo">
                 <img src="" alt="logo">
             </div>
@@ -355,5 +367,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
