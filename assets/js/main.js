@@ -1,15 +1,3 @@
-// slick
-
-$(function(){
-    $('.slide_wrap').slick({
-    infinite: true,
-    autoplay:true,
-    autoplaySpeed:2000,
-    dots:true,
-    dotsClass : "slick-dots",
-    arrows : false,
-    });
-});
 
 
 // responsive menu
