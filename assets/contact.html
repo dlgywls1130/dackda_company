@@ -8,8 +8,10 @@
 
     <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="./css/nice-select.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./js/jquery.nice-select.min.js"></script>
 </head>
 
 <body>
@@ -60,10 +62,133 @@
 
     </header>
     
-    <section class="main">
+    <section id="main">
+        <div class="main_content">
+            <div class="main_title">
+                특별한 고객을 위한
+                <br>특별한 상품  
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section id="sub_main" class="wrapp_inner">
+        <h2 class="sub_main_title">Contact</h2>
+        <div class="contatc_bg">
+            <img src="">
+        </div>
+
+        <div class="contact_wrap">
+            <div class="contact_select">
+                <select class="ddl-select" id="list" name="list">
+                    <option data-display="문의 내용 선택">문의 내용 선택</option>
+                    <option value="1">기업 제휴 및 협업</option>
+                    <option value="2">닥다몰 입점 문의</option>
+                    <option value="3">기업용 EAP 프로그램 문의</option>
+                </select>
+            </div>
+            <div class="contact_input">
+                <label class="input_info"><input type="text" placeholder="성함"></label>
+                <label class="input_info"><input type="text" placeholder="회사"></label>
+                <label class="input_info"><input type="text" placeholder="직급"></label>
+                <textarea placeholder="내용"></textarea>
+
+                <div class="button_contain mt-100">
+                    <button class="btn contact_btn">제출하기</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="location" class="wrapp_inner">
+        <div class="location_title  mt-150">오시는길</div>
+
+        <!-- 1. 지도 노드 -->
+        <div id="daumRoughmapContainer1678349833919" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+        <div class="location_info mt-100">
+            <div class="location_adress">
+                <div class="location_icon">
+                    <img src="">
+                </div>
+                <div class="location_name">주소</div>
+                <div class="adress">서울특별시 강남구 테헤란로 416
+                    <Br>(8층 연봉빌딩), 닥터다이어리
+                </div>
+            </div>
+            <div class="location_info_wrap">
+                <div class="location_mail">
+                    <div class="location_icon">
+                        <img src="">
+                    </div>
+                    <div class="location_name">이메일</div>
+                    <div class="adress">Contact@drdiary.co.kr</div>
+                </div>
+                <div class="location_tel">
+                    <div class="location_icon">
+                        <img src="">
+                    </div>
+                    <div class="location_name">대표전화</div>
+                    <div class="adress">02-2135-2098</div>
+                </div>
+            </div>
+        </div>
+
 
     </section>
 
+    <section id="bottom">
+        <div class="bottom">
+            <div class="bottom_wrap">
+                <div class="bottom_title">
+                    닥터다이어리와 함께
+                    <br>내일 더 건강한 나를 만나보세요.
+                </div>
+                <div class="btn-container">
+                    <button type="button" class="btn submit-btn">
+                        닥터다이어리 시작하기
+                    </button>
+                </div> 
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer wrapp_inner">
+            <div class="footer_logo">
+                <img src="" alt="logo">
+            </div>
+            <div class="footer_wrap">
+                <ul>
+                    <li>서울특별시 강남구 테헤란로 416 연봉빌딩 8층 닥터다이어리</li>
+                    <li>대표이사  송제윤</li>
+                    <li>이메일  contact@drdiary.co.kr</li>
+                </ul>
+                <p>Copyright © Dr.Diary., Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
     <script src="./js/main.js"></script>
+    <!-- 다음 지도앱 -->
+    <script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+    <!-- 3. 실행 스크립트 -->
+    <script charset="UTF-8">
+        new daum.roughmap.Lander({
+            "timestamp" : "1678349833919",
+            "key" : "2ezf3",
+            "mapWidth" : "1440",
+            "mapHeight" : "646"
+        }).render();
+    </script>
+
+    <script>
+        $(document).ready(function() {
+            $('select').niceSelect();
+        });
+    </script>
 </body>
 </html>
