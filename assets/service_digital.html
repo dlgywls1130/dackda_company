@@ -6,56 +6,312 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>닥터다이어리</title>
 
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
-
     <!-- header -->
     <header>
-
-        <nav class="nav">
             
-            <!-- logo  -->
-            <div class="logo">
-                <img src="" alt="logo">
+        <div class="navigation">
+            <div class="nav-container">
+                <!-- logo  -->
+                <div class="logo">
+                    <!-- <img src="" alt="logo"> -->
+                    <a href="/assets/main.html">닥터다이어리</a>
+                </div>
+                
+
+
+    
+                <nav>
+                    <div class="nav-mobile">
+                        <a id="nav-toggle" href="#!">
+                            <span></span>
+                        </a>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="menu-item"><a href="/assets/main.html">About Dr.diary</a></li>
+                        <li class="menu-item menu-dropdown">
+                            <a href="javascript:void(0)">Service</a>
+    
+                            <ul class="nav-dropdown">
+                                <li class="submenu_item"><a href="/assets/service_digital.html">Digital Platform</a></li>
+                                <li class="submenu_item"><a href="/assets/service_program.html">Service Program</a></li>
+                                <li class="submenu_item"><a href="/assets/service_commerce.html">Commerce</a></li>
+                            </ul>
+    
+                        </li>
+                        <li class="menu-item"><a href="/assets/news.html">News</a></li>
+                        <li class="menu-item"><a href="/assets/contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+    
             </div>
-
-            <!-- navbar -->
-            <div class="navbar">
-                <input type="radio" name="slider" id="menu-btn">
-                <input type="radio" name="slider" id="close-btn">
-
-                <ul class="nav-links">
-                    <label for="close-btn" class="btn close-btn">
-                        <i class="fas fa-times"></i>
-                    </label>
-                    <li><a href="/assets/pages/main.html">About Dr.diary</a></li>
-                    <li>
-                        <a href="/assets/pages/service_digital.html" class="desktop-item">Service</a>
-
-                        <!-- mobile dropdown -->
-                        <input type="checkbox" id="showDrop">
-                        <label for="showDrop" class="mobile-item">Service</label>
-                        <ul class="drop-menu">
-                            <li><a href="/assets/pages/service_digital.html">Digital Platform</a></li>
-                            <li><a href="/assets/pages/service_program.html">Service Program</a></li>
-                            <li><a href="/assets/pages/service_commerce.html">Commerce</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="/assets/pages/news.html">News</a></li>
-                    <li><a href="/assets/pages/contact.html">Contact</a></li>
-                </ul>
-            <label for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
-            </div>
+        </div>
 
 
-        </nav>
+
+
+
     </header>
     
-    <section class="main">
+    <section id="main">
+        <div class="main_content">
+            <div class="main_title">
+                작은 행동의 변화가
+                <br>지속 가능한 결과로
+            </div>
 
+            
+        </div>
     </section>
+
+    <section id="sub_main">
+
+        <div class="sub_wrap wrapp_inner">
+
+            <h2 class="sub_main_title">Digital Platform</h2>
+
+            <div class="sub_title">
+                단 하나의 건강 슈퍼앱
+            </div>
+            <div class="sub_span">
+                끊임없는 자기 주도를 위한 멀티 솔루션
+            </div>
+
+            <div class="super-app">
+                <div class="super-app_title">
+                    We value 
+                    <br>the virtue of 
+                    <br>Self-Motivation. 
+                </div>
+                <div class="super-app_content">
+                    <div class="phone_img"></div>
+                    <div class="phone_descript">
+                        삶이라는 마라톤은 
+                        <Br>신체적, 정신적으로 끊임없이 
+                        <Br>건강한 나의 힘을 찾아가는 여정이기에.
+                        <Br>끊임없이 응원해주고 
+                        <Br>앞으로 나아갈 수 있도록 
+                        <Br>우리가 함께 만들어나갑니다. 
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="now_wrap wrapp_inner">
+            <p class="now_title">닥터다이어리는 지금</p>
+            <ul class="history_start">
+                <li>
+                    <h2>100만</h2>
+                    <p>누적 다운로드 수</p>
+                </li>
+                <li>
+                    <h2>170억원</h2>
+                    <p>누적 투자액</p>
+                </li>
+                <li>
+                    <h2>30세 이하</h2>
+                    <p>포브스아시아 리더 선정</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="easy_record wrapp_inner">
+            <div class="sub_title">
+                간편한 건강기록 
+            </div>
+            <div class="sub_span">
+                식단, 체중, 혈당, 혈압, 심박수, 운동, 약물, 케톤까지 
+                <br>단 하나의 앱으로  다양한 기록의 관리가 가능합니다. 
+            </div>
+
+            <div class="app_img">
+
+            </div>
+        </div>
+
+        <div class="app_advantage wrapp_inner">
+            <ul>
+                <li>
+                    <div class="advantage_title">
+                        편리한 입력
+                    </div>
+                    <div class="advantage_content">
+                        다양한 헬스케어 스마트 기기들과의 
+                        <br>블루투스 연동을 통한 자동기록 기능을 지원합니다. 
+                    </div>
+                </li>
+                <li>
+                    <img src="">
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <div class="advantage_title">
+                        AI 영양사
+                    </div>
+                    <div class="advantage_content">
+                        사진 한 장으로 기록하는 간편한 AI 식단 관리. 
+                        <br>1초만에 사진을 분석하여 영양성분을 알려줍니다. 
+                    </div>
+                </li>
+                <li>
+                    <img src="">
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <div class="advantage_title">
+                        스마트한 건강 통계
+                    </div>
+                    <div class="advantage_content">
+                        사용자의 건강 기록 데이터를 기반으로
+                        <br>매주, 매월의 건강 행동 습관을 볼 수 있는 
+                        <br>다양한 통계들을 제공합니다. 
+                    </div>
+                </li>
+                <li>
+                    <img src="">
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <div class="advantage_title">
+                        전문 컨텐츠
+                    </div>
+                    <div class="advantage_content">
+                        사진 한 장으로 기록하는 간편한 AI 식단 관리. 
+                        <br>1초만에 사진을 분석하여 영양성분을 알려줍니다. 
+                    </div>
+                </li>
+                <li>
+                    <img src="">
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <div class="advantage_title">
+                        제품 추천
+                    </div>
+                    <div class="advantage_content">
+                        사진 한 장으로 기록하는 간편한 AI 식단 관리. 
+                        <br>1초만에 사진을 분석하여 영양성분을 알려줍니다. 
+                    </div>
+                </li>
+                <li>
+                    <img src="">
+                </li>
+            </ul>
+        </div>
+
+        <div class="sub_bottom">
+            <div class="sub_bottom_wrap wrapp_inner">
+                <h3 class="title">단 하나의 건강 슈퍼앱</h3>
+                <h4>끊임없는 자기 주도를 위한 멀티 솔루션</h4>
+                <ul>
+                    <li>건강기록관리</li>
+                    <li>전문 컨텐츠</li>
+                    <li>커뮤니티</li>
+                    <li>제품 추천</li>
+                    <li>캠페인</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sub_communtiy app_advantage wrapp_inner">
+            <div class="sub_title">
+                함께 만들어나가는 커뮤니티
+            </div>
+            <ul>
+                <li>
+                    <div class="advantage_title">
+                        함께 나누는 공통된 관심사.  
+                    </div>
+                    <div class="advantage_content">
+                        회원들간의 일상, 질환, 식단, 제품 공유 등 다양한
+                        <br>주제에 대해 공감대를 형성하는 소통 공간입니다. 
+                    </div>
+                </li>
+                <li>
+                    <img src="">
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <div class="advantage_title">
+                        올바른 정보 공유
+                    </div>
+                    <div class="advantage_content">
+                        올바른 지식전달을 위해 닥터다이어리의 전문 인력들이 
+                        <br>다양한 주제로 콘텐츠를 만들어 함께 소통하고 있습니다.  
+                    </div>
+                </li>
+                <li>
+                    <img src="">
+                </li>
+            </ul>
+
+            <ul>
+                <li>
+                    <div class="advantage_title">
+                        오프라인 커뮤니티 행사
+                    </div>
+                    <div class="advantage_content">
+                        사회환원의 일환으로 매년 다양한 행사를 
+                        <br>진행하고 있습니다. 
+                        <br>2022년에는 [#나도쉽게살자]라는 슬로건으로 
+                        <br>온•오프라인 캠페인을 진행하고 있습니다.
+                    </div>
+                </li>
+                <li>
+                    <img src="">
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="bottom">
+        <div class="bottom">
+            <div class="bottom_wrap">
+                <div class="bottom_title">
+                    닥터다이어리와 함께
+                    <br>내일 더 건강한 나를 만나보세요.
+                </div>
+                <div class="btn-container">
+                    <button type="button" class="btn submit-btn">
+                        닥터다이어리 시작하기
+                    </button>
+                </div> 
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer wrapp_inner">
+            <div class="footer_logo">
+                <img src="" alt="logo">
+            </div>
+            <div class="footer_wrap">
+                <ul>
+                    <li>서울특별시 강남구 테헤란로 416 연봉빌딩 8층 닥터다이어리</li>
+                    <li>대표이사  송제윤</li>
+                    <li>이메일  contact@drdiary.co.kr</li>
+                </ul>
+                <p>Copyright © Dr.Diary., Ltd. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/main.js"></script>
 </body>
 </html>
